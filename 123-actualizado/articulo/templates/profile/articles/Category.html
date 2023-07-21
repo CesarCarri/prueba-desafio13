@@ -1,0 +1,19 @@
+<!-- categoria.html -->
+{% extends 'layout.html' %} 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listado de Categorías</title>
+</head>
+<body>
+
+<h1>Listado de Categorías</h1>
+
+<ul>
+  {% for categoria in categorias %}
+    <li>{{ categoria.nombre }}</li>
+  {% endfor %}
+</ul>
+
+</body>
+</html>

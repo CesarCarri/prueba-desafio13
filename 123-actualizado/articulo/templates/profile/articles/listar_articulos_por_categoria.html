@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ categoria.nombre }}</title>
+</head>
+<body>
+    <h1>{{ categoria.nombre }}</h1>
+    <ul>
+        {% for articulo in articulos %}
+        <li>
+            <h2>{{ articulo.titulo }}</h2>
+            <p>{{ articulo.contenido }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

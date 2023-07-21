@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listado de Categorías</title>
+</head>
+<body>
+    <h1>Listado de Categorías</h1>
+    <ul>
+        {% for categoria in categorias %}
+        <li><a href="{% url 'listar_articulos_por_categoria' categoria.id %}">{{ categoria.nombre }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
